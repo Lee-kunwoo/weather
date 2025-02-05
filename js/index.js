@@ -33,7 +33,7 @@ const apiKey = "207bfda7095044c9b3ffc980d10be7a7";
             const day = String(now.getDate()).padStart(2, "0");
             const weekday = ["일", "월", "화", "수", "목", "금", "토"][now.getDay()];
     
-            document.getElementById("time").innerText = `${ampm} ${hours}:${minutes.toString().padStart(2, "0")} `;
+            document.getElementById("time").innerText = `${ampm}. ${hours}:${minutes.toString().padStart(2, "0")} `;
             document.getElementById("date").innerText = `${year}. ${month}. ${day} (${weekday})`;
         }
           
